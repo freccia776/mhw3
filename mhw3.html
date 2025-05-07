@@ -1,0 +1,309 @@
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <title>CHILI: REPLICA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mhw3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="mhw3.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- NAV BAR -->
+    <nav class="navbar">
+      <div class="sinistra">
+        <div class="menu">
+          <div class="linea"></div>
+          <div class="linea"></div>
+          <div class="linea"></div>
+        </div>
+        <div class="sidebar hidden" data-open="false"></div>
+        <div id="menuoverlay" class="hidden"></div>
+        <img class="logo" src="./icon/logobianco.svg" />
+        <ul id="links">
+          <li><a href="mhw3.html">Home</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Gratis</a></li>
+          <li><a href="#">Canali</a></li>
+        </ul>
+      </div>
+
+      <div class="destra">
+        <div class="search-container">
+          <form id="form1">
+            <input type="text" placeholder="Cerca..." name="search" class="search-input">
+            <button type="submit"></button>
+          </form>
+        </div>
+
+
+        <button id="search_btn" type="submit"></button>
+
+
+        <div class="profilebar hidden" data-open="false">
+          <div class="authbar">
+            <ul class="auth">
+              <li>
+                <button class="registrati" data-text="Registrati">Registrati</button>
+              </li>
+              <li>
+                <button class="accedi" data-text="Accedi">Accedi</button>
+              </li>
+            </ul>
+          </div>
+          <p class="pbar">Registrati e scopri migliaia di film e serie TV imperdibili, anche GRATIS.</p>
+          <p class="pbar">Qualunque sia il tuo film, su CHILI c'è!</p>
+          <p id="codice">Hai un codice?</p>
+        </div>
+        <div class="profilo">
+          <img src="./icon/profilo.svg" />
+        </div>
+
+        <div class="autenticazione">
+          <ul class="auth">
+            <li>
+              <button class="registrati" data-text="Registrati">Registrati</button>
+            </li>
+            <li>
+              <button class="accedi" data-text="Accedi">Accedi</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bigsearch hidden" data-open="false">
+
+      <button class="close-btn"></button>
+      <form id="form2">
+        <input type="text" class="search-input" placeholder="Cerca">
+        <button type="submit" class="search-btn"></button>
+      </form>
+
+
+    </div>
+
+
+    <div class="img-primapagina" id="sliderpage">
+
+      <div id="overlay"></div>
+      <img class="image" src="./slide/slide1.jpg" />
+      <img class="smartimage" src="./slide/slide8.jpg" /> <!-- nascosta inizialmete su modalità desktop-->
+      <div class="contenuto">
+        <a>NOVITÀ</a>
+        <h1>Disponibile per il noleggio</h1>
+        <p>Guardalo subito</p>
+      </div>
+
+      <button class="prev-btn">&#10094;</button>
+      <button class="next-btn">&#10095;</button>
+
+    </div>
+
+
+  </header>
+
+
+  <!-- CATEGORIE -->
+  <div id="main">
+    <div class="sezioni-contenitore">
+      <!-- SINGOLA SEZIONE -->
+      <section class="sezione">
+
+        <div class="titolo-sezione">
+          <h2>Ultimi Aggiunti</h2>
+          <button>&#10095;</button>
+        </div>
+
+        <div class="mini-slider">
+          <div class="mini-slide">
+            <img src="./copertine/img1.jpg" />
+            <div class="info">
+              <h4>Retribution</h4>
+              <p>6,99€</p>
+            </div>
+          </div>
+
+
+          <div class="mini-slide">
+            <img src="./copertine/img2.jpg" />
+            <div class="info">
+              <h4>Vermiglio</h4>
+              <p>6,99€</p>
+            </div>
+          </div>
+
+          <div class="mini-slide">
+            <img src="./copertine/img3.jpg" />
+            <div class="info">
+              <h4>Challengers</h4>
+              <p>7,99€</p>
+            </div>
+          </div>
+
+          <div class="mini-slide">
+            <img src="./copertine/img4.jpg" />
+            <div class="info">
+              <h4>Hey Joe</h4>
+              <p>5,99€</p>
+            </div>
+          </div>
+
+          <div class="mini-slide">
+            <img src="./copertine/img5.jpg" />
+            <div class="info">
+              <h4>La casa del padre</h4>
+              <p>6,99€</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="sezione">
+
+        <div class="titolo-sezione">
+          <h2>Più Visti</h2>
+          <button>&#10095;</button>
+        </div>
+
+        <div class="mini-slider">
+
+          <div class="mini-slide">
+            <img src="./copertine/img6.jpg" />
+            <div class="info">
+              <h4>No way up</h4>
+              <p>6,99€</p>
+            </div>
+          </div>
+
+
+          <div class="mini-slide">
+            <img src="./copertine/img7.jpg" />
+            <div class="info">
+              <h4>Uno Rosso</h4>
+              <p>4,99€</p>
+            </div>
+          </div>
+
+          <div class="mini-slide">
+            <img src="./copertine/img8.jpg" />
+            <div class="info">
+              <h4>Mimì</h4>
+              <p>6,99€</p>
+            </div>
+          </div>
+
+          <div class="mini-slide">
+            <img src="./copertine/img9.jpg" />
+            <div class="info">
+              <h4>The Plane</h4>
+              <p>5,99€</p>
+            </div>
+          </div>
+
+          <div class="mini-slide">
+            <img src="./copertine/img10.jpg" />
+            <div class="info">
+              <h4>Road House</h4>
+              <p>8,99€</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="sezione">
+        <div class="titolo-sezione">
+          <h2>In arrivo</h2>
+          <button>&#10095;</button>
+        </div>
+        <div class="mini-slider" id="upcoming-slider">
+
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- SEZIONE DI RICERCA -->
+
+  <section class="ricerca info-container hidden">
+    <h1>Risultati di ricerca: <span></span></h1>
+    <div id="risultati"></div>
+  </section>
+
+
+  <!--FOOTER-->
+
+  <footer>
+    <div class="contenitore">
+      <div class="row">
+        <div class="footer-col">
+          <div class="title-info">
+            <h4>CHI SIAMO</h4>
+            <button data-target="info1">+</button>
+          </div>
+          <div class="info-verticali smarthidden" id="info1">
+            <a href="#">Chi siamo</a>
+            <a href="#">Contattaci</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="title-info">
+            <h4>ASSISTENZA</h4>
+            <button data-target="info2">+</button>
+          </div>
+          <div class="info-verticali smarthidden" id="info2">
+            <a href="#">FAQ</a>
+            <a href="#">Ticket Assistenza</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="title-info">
+            <h4>SEGUICI SU</h4>
+            <button data-target="info3">+</button>
+          </div>
+          <div class="info-orizzontali smarthidden" id="info3">
+            <a href="#"><img src="./icon/facebook.svg" /></a>
+            <a href="#"><img src="./icon/instagram.svg" /></a>
+            <a href="#"><img src="./icon/youtube.svg" /></a>
+          </div>
+
+
+        </div>
+
+        <div class="footer-col">
+          <div class="title-info">
+            <h4>METODI DI PAGAMENTO</h4>
+            <button data-target="info4">+</button>
+          </div>
+          <div class="info-orizzontali smarthidden" id="info4">
+            <a href="#"><img src="./icon/mastercard.svg" /></a>
+            <a href="#"><img src="./icon/paypal.svg" /></a>
+            <a href="#"><img src="./icon/visa.svg" /></a>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="footer-below">
+        <p>Powered by Michele Raciti 1000047549</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
